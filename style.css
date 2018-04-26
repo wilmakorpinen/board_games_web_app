@@ -1,0 +1,169 @@
+:root {
+  --header-height: 80px;
+}
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+}
+.appbar {
+  width: 100vw;
+  height: var(--header-height);
+  top: 0;
+  left:0;
+}
+.appbar, .menu {
+  background: #1B1862;
+  padding: 1em;
+  position: fixed;
+}
+.menu {
+  top: var(--header-height);
+  height: 100vh;
+  width: 100vw;
+  transition: all 0.3s 0.3s;
+  color: white;
+}
+.menu.hidden {
+  transform: translateX(-100vw);
+}
+.menuIcon {
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 12px;
+}
+.menuIcon rect {
+  fill: white;
+  transition: all 0.6s;
+}
+.menuIcon rect:nth-child(1){
+  transform-origin: left top;
+}
+.menuIcon rect:nth-child(3){
+  transform-origin: left bottom;
+}
+.menuIcon rect.fadeOut {
+  opacity: 0;
+}
+.menuIcon rect.rotateUp {
+  transform: rotate(-45deg) translate(18px, 41px);
+}
+.menuIcon rect.rotateDown {
+  transform: rotate(45deg) translate(17px, -14px);
+}
+.image-header{
+    position: absolute;
+    top:0;
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 60%;
+    height: 70%;
+    background-image: url('/board_games_web_app/images/logo_huset.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+}
+.search-header{
+    position:absolute;
+    top:0;
+   right: 0;
+    margin-top: 20px;
+    margin-right: 25px;
+    background-image: url(/board_games_web_app/images/search_icon.svg);
+    width: 23%;
+    height: 50%;
+    background-repeat: no-repeat;
+    
+}
+.log-header{
+    position:absolute;
+    top:0;
+    right: 0;
+    margin-top: 25px;
+    margin-right: 10px;
+    font-size: 20px;
+    color: white;
+    font-family: Avenir Next, sans-serif;
+}
+.title-web{
+    margin-top: 80px;
+    text-align: center;
+    background-image: url(/board_games_web_app/images/boardgame_background_image.svg);
+    
+   
+    
+}
+.title-desc{
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    font-size: 17px;
+    font-family: Avenir Next, sans-serif;
+    background-color: #FBDFEB;
+    color: #1B1862;
+}
+.arrow-down{
+    position: relative;
+    background-image: url(/images/arrow_down_red.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+
+.readmore{
+    font-family: Avenir Next bold, sans-serif;
+    color: #1B1862;
+}
+
+img {
+    align-content: center;
+    
+}
+
+.eventimage {
+    align-content: center;
+}
+
+.price{
+   font-family: Avenir Next, sans-serif;
+    color: #1B1862; 
+}
+
+.heading {
+    font-family: Avenir Next, sans-serif;
+    color: #FBDFEB; 
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+  
+
+.container-fluid h1{
+    text-align: center;
+    font-family: Avenir Next, sans-serif;
+}
+@media (min-width: 1000px)  {
+  #musiclist {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (min-width: 1300px)  {
+  #music {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
