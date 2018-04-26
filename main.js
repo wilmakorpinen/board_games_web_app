@@ -35,7 +35,7 @@ function showSingleBoardgame(aBoardgame){
       clone.querySelector("img").remove()
   }
 
-  clone.querySelector('.readmore').href = 'subpage.html?board_games?_embed/id=' + aBoardgame.id;
+  clone.querySelector('.readmore').href = 'subpages.html?id=' + aBoardgame.id;
 
   boardgamelist.appendChild(clone);
 }
