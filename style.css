@@ -107,7 +107,7 @@ html, body {
 }
 .arrow-down{
     position: relative;
-    background-image: url(/images/arrow_down_red.svg);
+    background-image: url(../images/arrow_down_red.svg);
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
