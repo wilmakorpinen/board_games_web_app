@@ -14,7 +14,7 @@ html, body {
   left:0;
 }
 .appbar, .menu {
-  background: #1B1862;
+  background: #FBDFEB;
   padding: 1em;
   position: fixed;
 }
@@ -23,7 +23,7 @@ html, body {
   height: 100vh;
   width: 100vw;
   transition: all 0.3s 0.3s;
-  color: white;
+  color: #1B1862;
 }
 .menu.hidden {
   transform: translateX(-100vw);
@@ -34,7 +34,7 @@ html, body {
   margin-left: 12px;
 }
 .menuIcon rect {
-  fill: white;
+  fill: #1B1862;
   transition: all 0.6s;
 }
 .menuIcon rect:nth-child(1){
@@ -59,7 +59,7 @@ html, body {
     margin-left: 50px;
     width: 60%;
     height: 70%;
-    background-image: url('/board_games_web_app/images/logo_huset.png');
+    background-image: url('../images/logo_blue_huset.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -71,7 +71,7 @@ html, body {
    right: 0;
     margin-top: 20px;
     margin-right: 25px;
-    background-image: url(/board_games_web_app/images/search_icon.svg);
+    background-image: url(../images/search_icon_blue.svg);
     width: 23%;
     height: 50%;
     background-repeat: no-repeat;
@@ -84,19 +84,22 @@ html, body {
     margin-top: 25px;
     margin-right: 10px;
     font-size: 20px;
-    color: white;
+    color: #1B1862;
     font-family: Avenir Next, sans-serif;
 }
 .title-web{
     margin-top: 80px;
     text-align: center;
-    background-image: url(/board_games_web_app/images/boardgame_background_image.svg);
+    background-image: url(../images/boardgame_background_image.svg);
+    height: 55vh;
+    background-repeat: no-repeat;
+    width: 100%;
     
    
     
 }
 .title-desc{
-    padding: 10px;
+    padding: 20px;
     padding-left: 15px;
     padding-right: 15px;
     text-align: left;
@@ -105,13 +108,11 @@ html, body {
     background-color: #FBDFEB;
     color: #1B1862;
 }
-.arrow-down{
-    position: relative;
-    background-image: url(../images/arrow_down_red.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+.arrow{
+   position:relative;
+ padding-left: 120px;
+    width: 80%;
+    height: 50%;
 }
 
 
@@ -136,7 +137,15 @@ img {
 
 .heading {
     font-family: Avenir Next, sans-serif;
-    color: #FBDFEB; 
+    color: #1B1862; 
+}
+
+.button {
+    color: #1B1862;
+    background-color: #FBDFEB;
+    font-family: Avenir Next bold, sans-serif;
+    font-size: 40px;
+    
 }
 
 .footer {
