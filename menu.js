@@ -14,7 +14,7 @@ window.addEventListener('load',()=>{
   }
     
     
-  fetch('http://wilmakorpinen.com/wp00/wp-json/wp/v2/categories?per_page=10').then(e => e.json()).then(buildMenu)
+  fetch('http://wilmakorpinen.com/wp00/wp-json/wp/v2/categories?per_page=50').then(e => e.json()).then(buildMenu)
     
     function buildMenu(data){
         let parentElement = document.querySelector('.menu ul')

@@ -1,60 +1,90 @@
 :root {
-  --header-height: 80px;
+    --header-height: 80px;
 }
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
-html, body {
-  margin: 0;
+
+html,
+body {
+    margin: 0;
 }
+
 .appbar {
-  width: 100vw;
-  height: var(--header-height);
-  top: 0;
-  left:0;
+    width: 100vw;
+    height: var(--header-height);
+    top: 0;
+    left: 0;
 }
-.appbar, .menu {
-  background: #FBDFEB;
-  padding: 1em;
-  position: fixed;
-}
+
+.appbar,
 .menu {
-  top: var(--header-height);
-  height: 100vh;
-  width: 100vw;
-  transition: all 0.3s 0.3s;
-  color: #1B1862;
+    background: #FBDFEB;
+    padding: 1em;
+    position: fixed;
 }
+
+.menu {
+    padding: 20px;
+    top: var(--header-height);
+    height: 100vh;
+    width: 100vw;
+    transition: all 0.3s 0.3s;
+    color: #1B1862;
+      font-size:30px;
+font-family: Avenir Next, sans-serif;
+}
+
+.menu li{
+    padding: 20px;
+     list-style-type: none;
+}
+
+.menu ul a{
+    color: #1B1862;
+    font-size: 50px;
+}
+
 .menu.hidden {
-  transform: translateX(-100vw);
+    transform: translateX(-100vw);
 }
+
 .menuIcon {
-  height: 30px;
-  margin-top: 10px;
-  margin-left: 12px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 12px;
 }
+
 .menuIcon rect {
-  fill: #1B1862;
-  transition: all 0.6s;
+    fill: #1B1862;
+    transition: all 0.6s;
 }
-.menuIcon rect:nth-child(1){
-  transform-origin: left top;
+
+.menuIcon rect:nth-child(1) {
+    transform-origin: left top;
 }
-.menuIcon rect:nth-child(3){
-  transform-origin: left bottom;
+
+.menuIcon rect:nth-child(3) {
+    transform-origin: left bottom;
 }
+
 .menuIcon rect.fadeOut {
-  opacity: 0;
+    opacity: 0;
 }
+
 .menuIcon rect.rotateUp {
-  transform: rotate(-45deg) translate(18px, 41px);
+    transform: rotate(-45deg) translate(18px, 41px);
 }
+
 .menuIcon rect.rotateDown {
-  transform: rotate(45deg) translate(17px, -14px);
+    transform: rotate(45deg) translate(17px, -14px);
 }
-.image-header{
+
+.image-header {
     position: absolute;
-    top:0;
+    top: 0;
     margin-top: 10px;
     margin-left: 50px;
     width: 60%;
@@ -63,23 +93,36 @@ html, body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    
 }
-.search-header{
-    position:absolute;
+
+
+.image-subpage-header{
+   position: absolute;
     top:0;
-   right: 0;
+    margin-top: 10px;
+    margin-left: 60px;
+    width: 60%;
+    height: 70%;
+    background-image: url('../images/movie-title-light.svg');
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+
+.search-header {
+    position: absolute;
+    top: 0;
+    right: 0;
     margin-top: 20px;
     margin-right: 25px;
     background-image: url(../images/search_icon_blue.svg);
     width: 23%;
     height: 50%;
     background-repeat: no-repeat;
-    
 }
-.log-header{
-    position:absolute;
-    top:0;
+
+.log-header {
+    position: absolute;
+    top: 0;
     right: 0;
     margin-top: 25px;
     margin-right: 10px;
@@ -87,18 +130,28 @@ html, body {
     color: #1B1862;
     font-family: Avenir Next, sans-serif;
 }
-.title-web{
+
+.title-web {
     margin-top: 80px;
     text-align: center;
     background-image: url(../images/boardgame_background_image.svg);
     height: 55vh;
     background-repeat: no-repeat;
     width: 100%;
-    
-   
-    
 }
-.title-desc{
+
+.title-desc {
+    padding: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    font-size: 40px;
+    font-family: Avenir Next bold, sans-serif;
+    
+    color: #1B1862;
+}
+
+.small-desc{
     padding: 20px;
     padding-left: 15px;
     padding-right: 15px;
@@ -107,72 +160,182 @@ html, body {
     font-family: Avenir Next, sans-serif;
     background-color: #FBDFEB;
     color: #1B1862;
+    
 }
-.arrow{
-   position:relative;
- padding-left: 120px;
+
+
+
+.boardgame-event h2{
+    display: inline-block;
+    font-family: Avenir Next, sans-serif;
+    font-size: 17px;
+    padding-left: 40px;
+}
+
+
+
+.arrow {
+    position: relative;
+    padding-left: 120px;
     width: 80%;
     height: 50%;
 }
 
 
-.readmore{
+
+.readmore {
+    padding-left: 40px;
     font-family: Avenir Next bold, sans-serif;
+    font-size: 20px;
+    display: inline-block;
     color: #1B1862;
+   
+
+    
 }
 
 img {
     align-content: center;
-    
 }
 
 .eventimage {
     align-content: center;
+    display: block;
+    margin-left: 80px;
 }
 
-.price{
-   font-family: Avenir Next, sans-serif;
-    color: #1B1862; 
-}
-
-.heading {
+.price  {
     font-family: Avenir Next, sans-serif;
-    color: #1B1862; 
-}
-
-.button {
     color: #1B1862;
-    background-color: #FBDFEB;
-    font-family: Avenir Next bold, sans-serif;
-    font-size: 40px;
-    
 }
-
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: red;
-   color: white;
-   text-align: center;
-}
-  
 
 .container-fluid h1{
     text-align: center;
+    
+}
+
+article:nth-child(odd) img{
+  box-shadow: -39px -21px 0px 4px rgba(251,223,235,1);
+}
+
+article:nth-child(even) img{
+  box-shadow: -39px -21px 0px 4px rgba(27,24,98,1);
+}
+
+
+
+
+
+
+
+
+
+
+.heading {
     font-family: Avenir Next, sans-serif;
+    color: #1B1862;
 }
-@media (min-width: 1000px)  {
-  #musiclist {
+
+.button {
+    width: 300px;
+padding: 20px;
+cursor: pointer;
+font-weight: bold;
+font-size: 150%;
+    box-shadow: #1B1862;
+
+border-radius: 10px;
+    color: #1B1862;
+    background-color: #FBDFEB;
+    font-family: Avenir Next bold, sans-serif;
+
+}
+
+
+
+.container-fluid h1 {
+    text-align: center;
+    font-family: Avenir Next, sans-serif;
+    font-size: 30px;
+    color: #1B1862;
+}
+
+.boardgame-event img{
+    display: block;
+    margin-left: 100px;
+}
+
+. boardgame-event h2{
+    display: inline-block;
+    font-size: 17px;
+    padding-left: 40px;
+}
+
+
+#singleBoardgame{
+   font-family: Avenir Next, sans-serif;
+    display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-
 }
 
-@media (min-width: 1300px)  {
-  #music {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+#singleBoardgame h1{
+  padding-top: 10px; 
+  grid-column: 1/-1;
+    font-size: 30px;
+}
 
+#singleBoardgame img{
+    grid-column: 1/-1;
+   grid-row: 2/3;
+    width: 100%;    
+}
+
+#singleBoardgame .genre {
+   grid-column: 1/2;
+    grid-row: 3/4;
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+}
+
+#singleBoardgame .price{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    font-size: 18px;
+    padding: 5px; 
+    text-align: center;
+}
+
+#singleBoardgame .date{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    font-size: 18px;
+    padding: 5px; 
+    text-align: center;
+}
+
+#singleBoardgame .location{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    font-size: 18px;
+    padding: 5px; 
+    text-align: center;
+}
+
+#singleBoardgame .descript{
+    grid-column: 1/-1;
+    font-size: 17px;
+}
+
+
+@media (min-width: 1000px) {
+    #musiclist {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1300px) {
+    #music {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

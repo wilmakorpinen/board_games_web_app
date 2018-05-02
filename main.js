@@ -3,6 +3,10 @@ let musiclist = document.querySelector("#boardgamelist");
 let page = 1;
 let lookingForData = false;
 
+document.querySelector('.image-header').onclick = function (){
+    location.href = "index.html"; // add a new link from server
+}
+
 function fetchBoardgame(){
   lookingForData=true;
     
