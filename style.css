@@ -170,7 +170,7 @@ font-family: Avenir Next, sans-serif;
 .title-web {
     margin-top: 80px;
     text-align: center;
-    background-image: url(../images/boardgame_background_image.svg);
+    background-image: url('../images/boardgame_background_image.svg');
     height: 55vh;
     background-repeat: no-repeat;
     width: 100%;

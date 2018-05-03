@@ -24,8 +24,8 @@ window.addEventListener('load',()=>{
             let a = document.createElement('a');
             if(item.parent == 17){
             a.textContent = item.name;
-            a.href = 'index.html?categories='+ item.id;
-                document.querySelector('.container-fluid').style.marginTop = '40px';
+            a.href = 'categories.html?categories='+ item.id;
+                document.querySelector('.container-fluid').style.marginTop = '60px';
             
             li.appendChild(a);
             parentElement.appendChild(li);
