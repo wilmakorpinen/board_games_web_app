@@ -25,6 +25,7 @@ window.addEventListener('load',()=>{
             if(item.parent == 17){
             a.textContent = item.name;
             a.href = 'index.html?categories='+ item.id;
+                document.querySelector('.container-fluid').style.marginTop = '40px';
             
             li.appendChild(a);
             parentElement.appendChild(li);

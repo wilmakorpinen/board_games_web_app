@@ -82,6 +82,42 @@ font-family: Avenir Next, sans-serif;
     transform: rotate(45deg) translate(17px, -14px);
 }
 
+
+.so-me{
+    position: fixed;
+    top:60px;
+    right: 0;
+    height: 80%;
+    width: 10%;
+}
+.so-me .icon-fb{
+    background-image: url('../images/icons_some_fb.svg');
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    background-position: right;
+    width: 100%;
+    height: 7%;
+    opacity: .99;
+}
+.so-me .icon-twitter{
+    background-image: url('../images/icons_some_twitter.svg');
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    background-position: right;
+    width: 100%;
+    height: 7%;
+    opacity: .99;
+}
+.so-me .icon-insta{
+    background-image: url('../images/icons_some_insta.svg');
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    background-position: right;
+    width: 100%;
+    height: 7%;
+    opacity: .99;
+}
+
 .image-header {
     position: absolute;
     top: 0;
@@ -141,14 +177,14 @@ font-family: Avenir Next, sans-serif;
 }
 
 .title-desc {
-    padding: 20px;
+    
     padding-left: 15px;
     padding-right: 15px;
     text-align: left;
     font-size: 40px;
-    font-family: Avenir Next bold, sans-serif;
+    font-family: Avenir Next bol, sans-serif;
     
-    color: #1B1862;
+color: #1B1862;
 }
 
 .small-desc{
@@ -236,20 +272,7 @@ article:nth-child(even) img{
     color: #1B1862;
 }
 
-.button {
-    width: 300px;
-padding: 20px;
-cursor: pointer;
-font-weight: bold;
-font-size: 150%;
-    box-shadow: #1B1862;
 
-border-radius: 10px;
-    color: #1B1862;
-    background-color: #FBDFEB;
-    font-family: Avenir Next bold, sans-serif;
-
-}
 
 
 
@@ -325,6 +348,26 @@ border-radius: 10px;
 #singleBoardgame .descript{
     grid-column: 1/-1;
     font-size: 17px;
+}
+
+ .button{
+     grid-column: 1/-1;
+     background-color: #FBDFEB;
+    border: none;
+    color: #1B1862;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+     font-family: Avenir Next bold, sans-serif;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+     border-radius: 8px;
+}
+  
+.subtitle{
+    margin-top: 50px; 
 }
 
 

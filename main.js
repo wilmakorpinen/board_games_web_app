@@ -32,6 +32,15 @@ function showSingleBoardgame(aBoardgame){
   let clone = template.cloneNode(true);
   clone.querySelector("h1").textContent = aBoardgame.title.rendered;
   clone.querySelector(".price span").textContent=aBoardgame.acf.price;
+    
+    
+    clone.querySelector(".weekday").textContent = aBoardgame.acf.weekday;
+
+    let month = aBoardgame.acf.data.substring(0, 2);
+    var day = aBoardgame.acf.data.substring(2, 4);
+    var year = aBoardgame.acf.data.substring(4, 8);
+
+clone.querySelector(".date").textContent = month + "" + day + "" + year;
 
   if(aBoardgame._embedded["wp:featuredmedia"]){//img is there
      clone.querySelector("img").setAttribute("src", aBoardgame._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url)
